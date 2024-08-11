@@ -1,11 +1,11 @@
 import React from "react";
+import LogoNavButton from './LogoNavButton.js';
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="#">
-        
-         Mica Electronics
+        <LogoNavButton/>
       </a>
       <button
         className="navbar-toggler"

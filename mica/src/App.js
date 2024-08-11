@@ -5,7 +5,7 @@ import NavBar from "./Navigation/NavBar.js";
 import MicaCarousel from "./Carousel/Carousel.js";
 import Content from './Content/Content.js';
 import Contact from './Contact/Contact.js';
-import logo from './logo.png'
+import logo from './logo-black.png'
 
 const textStyle  = "Content";
 const title = "Title";
