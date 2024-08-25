@@ -4,7 +4,7 @@ import LogoNavButton from './LogoNavButton.js';
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">
+      <a className="navbar-brand" href="/">
         <LogoNavButton/>
       </a>
       <button
@@ -22,13 +22,23 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Home <span className="sr-only">(current)</span>
+            <a className="nav-link" href="/installations">
+              Installations
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Pricing
+            <a className="nav-link" href="/IT-support">
+              IT Support
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/remote-access">
+              Remote Access
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/contact">
+              Contact Us
             </a>
           </li>
         </ul>

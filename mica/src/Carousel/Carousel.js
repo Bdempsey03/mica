@@ -4,25 +4,21 @@ import '../App.css';
 
 const data = [
   {
-   image: require('./one.jpg'), 
-   caption:"Service One",
+   image: require('../Assets/network.jpg'), 
+   caption:"Installations",
    description:"Description Here"
   },
   {
-    image:require('./two.jpg'), 
-    caption:"Service Two",
+    image:require('../Assets/support.jpg'), 
+    caption:"IT Support",
     description:"Description Here"
    },
    {
-    image:require('./three.jpg'), 
-    caption:"Service Three",
+    image:require('../Assets/remote2.jpg'), 
+    caption:"Remote Access",
     description:"Description Here"
    },
-   {
-    image:require('./two.jpg'), 
-    caption:"Service Four",
-    description:"Description Here"
-   } 
+
 ]
 
 function MicaCarousel() {
@@ -38,7 +34,7 @@ function MicaCarousel() {
         return (
           <Carousel.Item>        
         <img
-          className="d-block w-100"
+          className="carousel-image"
           src={slide.image}
           alt="slider"
         />
@@ -46,7 +42,6 @@ function MicaCarousel() {
           <h3>{slide.caption}</h3>
           <p>{slide.description}</p>
         </Carousel.Caption>
-        {/* <p className="slider">Business Solutions | Backups | Other Service | Text</p> */}
       </Carousel.Item>
         )
       })}
