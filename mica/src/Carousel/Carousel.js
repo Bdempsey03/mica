@@ -1,22 +1,24 @@
 import React, {useState} from "react"; 
 import Carousel from 'react-bootstrap/Carousel';
+import '../App.css';
 
 const data = [
-  // {
-  //  image: require('./one.jpg'), 
-  //  caption:"Mica Electronics",
-  //  description:"Description Here"
-  // },
   {
-    image:require('./two.jpg'), 
-    caption:"Home Services",
+   image: require('../Assets/network.jpg'), 
+   caption:"Installations",
+   description:"Description Here"
+  },
+  {
+    image:require('../Assets/support.jpg'), 
+    caption:"IT Support",
     description:"Description Here"
    },
    {
-    image:require('./three.jpg'), 
-    caption:"Business Solutions",
+    image:require('../Assets/remote2.jpg'), 
+    caption:"Remote Access",
     description:"Description Here"
-   } 
+   },
+
 ]
 
 function MicaCarousel() {
@@ -27,13 +29,14 @@ function MicaCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-       {data.map((slide, i) => {
+       {
+       data.map((slide, i) => {
         return (
           <Carousel.Item>        
         <img
-          className="d-block w-100"
+          className="carousel-image"
           src={slide.image}
-          alt="slider image"
+          alt="slider"
         />
         <Carousel.Caption>
           <h3>{slide.caption}</h3>

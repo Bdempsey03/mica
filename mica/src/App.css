@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+@font-face {
+  font-family: 'Sofachrome';
+  src: url('./fonts/sofachrome.ttf') format('truetype');
+  /* Add additional font formats if necessary */
+  /* Specify the correct path to the font files */
+}
 
 .App-logo {
   height: 40vmin;
@@ -15,9 +21,9 @@
 
 .logo{
   position:absolute;
-  top:9%;
-  left:1%;
-  height:10%;
+  top:6em;
+  right:1em;
+  height:8em;
   z-index:1000;
 }
 .Carousel{
@@ -29,14 +35,17 @@
   font-size: 1.4em;
 }
 .ContentContainer{
-  margin-top:2.75em;
+  height:11em;
+  background-color:rgb(33, 37, 41);
+  color:white;
+  margin-top:-9em;
 }
 .Title{
   position: relative;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 2.3em;
   font-weight: bold;
-  margin-bottom:-30px;
+  margin-bottom:-0.5em;
 }
 .Contact{
   display:grid;
@@ -48,7 +57,12 @@
   color: white;
 }
 footer{
+  position: absolute;
   width:100%;
+  top:99%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
   background-color: black;
   color:white;
   
@@ -75,4 +89,32 @@ footer{
   to {
     transform: rotate(360deg);
   }
+}
+.carousel.slide .carousel-indicators button{
+  width:2em;
+  height: .2em;
+}
+.carousel-image{
+  height: 40em;
+  width:100%;
+  object-fit:fill;
+}
+.slider{
+  color:white;
+  position: absolute;
+  top:95%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+
+}
+.logoNavButton{
+  align-items: center;
+  margin-left:0.3em;
+}
+.logoNavButtonText{
+  font-family: 'sofachrome';
+  font-size: 0.8em;
+  display:flex;
+  align-items: baseline;
 }
