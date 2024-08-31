@@ -27,7 +27,7 @@
   z-index:1000;
 }
 .Carousel{
-  /* height:49em; */
+  height:49em;
 }
 .Content{
   margin: 2%;
@@ -57,14 +57,17 @@
   color: white;
 }
 footer{
-  position: absolute;
+  position: relative;
   width:100%;
-  top:99%;
+  bottom:0%;
   left:50%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   background-color: black;
   color:white;
+  
+}
+.serviceContent.{
   
 }
 .App-header {
