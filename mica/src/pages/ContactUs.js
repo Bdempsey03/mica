@@ -2,9 +2,9 @@ import React from 'react';
 import Navbar from '../Navigation/NavBar';
 function ContactUs() {
     return (
-      <>
+      <div className="page">
       <Navbar/>
-        <p>
+        <p className='text'>
         Contact:<br/>
         Kiba Dempsey<br/>
 Mica Electronics<br/>
@@ -15,7 +15,7 @@ Canada<br/>
 Email: info@mica-electronics.com<br/>
 Cell: 250 566 1990<br/>
       </p>
-      </>
+      </div>
     );
   }
   export default ContactUs;

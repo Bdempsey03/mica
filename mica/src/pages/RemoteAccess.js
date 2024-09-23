@@ -3,9 +3,9 @@ import Navbar from "../Navigation/NavBar";
 
 function RemoteAccess() {
     return (
-      <>
+      <div className="page">
     <Navbar/>
-      <p className="serviceContent">
+      <p className="text">
         Remote Access: <br/>
         One method we can use to look after your computers is remote access. Most of a computer’s functions can be
 accessed, and necessary corrections made, without the disruption of removing the computer to our premises or
@@ -16,7 +16,7 @@ showing signs of failing would still need a site visit to repair or replace.
 While we’re servicing the PC remotely, a clearly visible notification will be shown on the screen and the client
 can watch everything that is being done, if they wish.
       </p>
-      </>
+      </div>
     );
   }
   export default RemoteAccess;

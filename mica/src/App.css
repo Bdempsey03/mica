@@ -27,7 +27,7 @@
   z-index:1000;
 }
 .Carousel{
-  height:49em;
+  height:39em;
 }
 .Content{
   margin: 2%;
@@ -67,8 +67,11 @@ footer{
   color:white;
   
 }
-.serviceContent{
-
+.page .text{
+  color: black;
+  font-size:1.4em;
+  text-align: center;
+  /* background-color: #001c53; */
 }
 .App-header {
   background-color: #001c53;
@@ -98,7 +101,7 @@ footer{
   height: .2em;
 }
 .carousel-image{
-  height: 40em;
+  height: 30em;
   width:100%;
   object-fit:fill;
 }
