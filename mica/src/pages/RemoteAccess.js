@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from "../Navigation/NavBar";
 
+
 function RemoteAccess() {
+  
     return (
       <div className="page">
     <Navbar/>
@@ -16,6 +18,15 @@ showing signs of failing would still need a site visit to repair or replace.
 While we’re servicing the PC remotely, a clearly visible notification will be shown on the screen and the client
 can watch everything that is being done, if they wish.
       </p>
+      <div className="twoColumns">
+      <p style={{gridColumnStart:1,backgroundColor:"#ffffff",height:"20em"}} className="text">
+        The remote access process: <br/>
+        1. We do x <br/>
+        2. We do y <br/>
+        3....
+      </p>
+      <image style = {{gridColumnStart:2}} url = {'../Assets/support.jpg'}/>
+      </div>
       </div>
     );
   }
