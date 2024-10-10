@@ -17,7 +17,7 @@ export const myRoutes = () =>{
                 <Route path = "/IT-support" element={<ITSupport/>}/>
                 <Route path = "/installations" element={<Installations/>}/>
 
-                {/*If no path is specifiec/recognized display 404 page*/}
+                {/*If no path is specified/recognized display 404 page*/}
                 <Route path="*" element = {<NotFound/>}/>
             </Routes>
         </Router>
