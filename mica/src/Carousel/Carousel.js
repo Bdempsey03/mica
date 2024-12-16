@@ -1,4 +1,4 @@
-import React, {useState} from "react"; 
+import React, { useState } from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import '../App.css';
 
@@ -29,23 +29,25 @@ function MicaCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-       {
-       data.map((slide, i) => {
-        return (
-          <Carousel.Item>        
-        <img
-          className="carousel-image"
-          src={slide.image}
-          alt="slider"
-        />
-        <Carousel.Caption>
-          <h3>{slide.caption}</h3>
-          <p>{slide.description}</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-        )
-      })}
-      
+      {
+        data.map((slide, i) => {
+          return (
+            <Carousel.Item>
+              <a href={slide.linkTo}>
+                <img
+                  className="carousel-image"
+                  src={slide.image}
+                  alt="slider"
+                />
+                <Carousel.Caption>
+                  <h3>{slide.caption}</h3>
+                  <p >{slide.description}</p>
+                </Carousel.Caption>
+              </a>
+            </Carousel.Item>
+          )
+        })}
+
     </Carousel>
   );
 }

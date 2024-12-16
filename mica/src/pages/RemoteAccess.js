@@ -1,11 +1,13 @@
 import React from "react";
 import Navbar from "../Navigation/NavBar";
 
+
 function RemoteAccess() {
+  
     return (
-      <>
+      <div className="page">
     <Navbar/>
-      <p className="serviceContent">
+      <p className="text">
         Remote Access: <br/>
         One method we can use to look after your computers is remote access. Most of a computer’s functions can be
 accessed, and necessary corrections made, without the disruption of removing the computer to our premises or
@@ -16,7 +18,16 @@ showing signs of failing would still need a site visit to repair or replace.
 While we’re servicing the PC remotely, a clearly visible notification will be shown on the screen and the client
 can watch everything that is being done, if they wish.
       </p>
-      </>
+      <div className="twoColumns">
+      <p style={{gridColumnStart:1,backgroundColor:"#ffffff",height:"20em"}} className="text">
+        The remote access process: <br/>
+        1. We do x <br/>
+        2. We do y <br/>
+        3....
+      </p>
+      <image style = {{gridColumnStart:2}} url = {'../Assets/support.jpg'}/>
+      </div>
+      </div>
     );
   }
   export default RemoteAccess;
