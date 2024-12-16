@@ -13,7 +13,7 @@ function HomePage() {
         <div>
             <div className="App">
                 <NavBar />
-                <img className='logo' src={logo} />
+                {/* <img className='logo' src={logo} /> */}
                 <div className="Carousel">
                     <MicaCarousel />
                 </div>
