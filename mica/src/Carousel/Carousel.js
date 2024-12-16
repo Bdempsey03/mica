@@ -37,7 +37,7 @@ function MicaCarousel() {
         data.map((slide, i) => {
           return (
             <Carousel.Item>
-              <a href={slide.linkTo}>
+              {/* <a href={slide.linkTo}> */}
                 <img
                   className="carousel-image"
                   src={slide.image}
@@ -47,7 +47,7 @@ function MicaCarousel() {
                   <h3>{slide.caption}</h3>
                   <p >{slide.description}</p>
                 </Carousel.Caption>
-              </a>
+              {/* </a> */}
             </Carousel.Item>
           )
         })}

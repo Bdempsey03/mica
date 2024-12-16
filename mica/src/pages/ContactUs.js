@@ -8,7 +8,6 @@ function ContactUs() {
         Contact:<br/>
         Kiba Dempsey<br/>
 Mica Electronics<br/>
-1345 3rd Ave<br/>
 PO Box 1024<br/>
 Valemount, BC V0E 2Z0<br/>
 Canada<br/>

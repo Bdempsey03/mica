@@ -3,6 +3,13 @@ import LogoNavButton from './LogoNavButton.js';
 
 const Navbar = () => {
   return (
+    /*
+    Want to make clicking a nav bar entry just advance the carousel forward to that slide
+
+    Need to make navbar update carousel somehow?
+
+
+    */
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="/">
         <LogoNavButton/>
@@ -39,6 +46,11 @@ const Navbar = () => {
           <li className="nav-item">
             <a className="nav-link" href="/contact">
               Contact Us
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/about">
+              About Us
             </a>
           </li>
         </ul>
