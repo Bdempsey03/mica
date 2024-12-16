@@ -19,12 +19,12 @@ function HomePage() {
                 </div>
                 <div className='ContentContainer'>
                     <Content titleStyle={title} missionStyle={missionStyle} />
-                    <footer>
-                        Phone: 250-566-1990 |
-                        <a href={'mailto:lazydogacres@gmail.com'} > email </a> |
-                        <a href={'https://www.facebook.com/MicaElectronics/'} > facebook </a>
-                    </footer>
                 </div>
+                <footer>
+                    Phone: 250-566-1990 |
+                    <a href={'mailto:lazydogacres@gmail.com'} > email </a> |
+                    <a href={'https://www.facebook.com/MicaElectronics/'} > facebook </a>
+                </footer>
             </div>
         </div>
     );

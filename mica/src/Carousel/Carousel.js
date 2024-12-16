@@ -4,19 +4,19 @@ import '../App.css';
 
 const data = [
   {
-   image: require('../Assets/network.jpg'), 
+   image: require('../Assets/network2.jpg'), 
    caption:"Installations",
-   description:"Description Here"
+   description:"Mica Electronics provides commerical grade IT installation solutions for small to mid-sized businesses."
   },
   {
-    image:require('../Assets/support.jpg'), 
+    image:require('../Assets/typing.jpg'), 
     caption:"IT Support",
-    description:"Description Here"
+    description:"Mica Electronics can fully support existing servers (Linux or Windows) and networks and we’re always happy to help. If you’re having technical problems right now, please don’t hesitate to contact us for help."
    },
    {
-    image:require('../Assets/remote2.jpg'), 
+    image:require('../Assets/remote-access-tools.webp'), 
     caption:"Remote Access",
-    description:"Description Here"
+    description:"One method we can use to look after your computers is remote access. Most of a computer’s functions can be accessed, and necessary corrections made, without the disruption of removing the computer to our premises or a site visit having to take place."
    },
 
 ]
