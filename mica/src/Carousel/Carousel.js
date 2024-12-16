@@ -14,7 +14,7 @@ const data = [
     description:"Mica Electronics can fully support existing servers (Linux or Windows) and networks and we’re always happy to help. If you’re having technical problems right now, please don’t hesitate to contact us for help."
    },
    {
-    image:require('../Assets/remote-access-tools.webp'), 
+    image:require('../Assets/remote2.jpg'), 
     caption:"Remote Access",
     description:"One method we can use to look after your computers is remote access. Most of a computer’s functions can be accessed, and necessary corrections made, without the disruption of removing the computer to our premises or a site visit having to take place."
    },

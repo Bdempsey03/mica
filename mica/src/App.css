@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 @font-face {
   /* font-family: 'Sofachrome'; */
@@ -28,7 +29,10 @@
 }
 
 .Carousel{
-  height:39em;
+  position:relative;
+  /* top:10%; */
+  height:40em;
+  width:100%;
 }
 .Content{
   margin: 2%;
@@ -36,7 +40,7 @@
   font-size: 1.4em;
 }
 .ContentContainer{
-  height:11em;
+  height:20em;
   background-color:rgb(238, 238, 238);
   color:black;
   margin-top:-9em;
@@ -67,6 +71,9 @@ footer{
   background-color: black;
   color:white;
    */
+   position: absolute; 
+   bottom: 0; 
+   width: 100%;
    background-color: black;
    color:white;
 }
