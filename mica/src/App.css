@@ -1,6 +1,11 @@
+
+:root {
+  --main-bg-color:(rgba(33,37,41,1));
+}
 .App {
   text-align: center;
   min-height: 100vh;
+  background-color: rgba(33,37,41,1);
 }
 @font-face {
   /* font-family: 'Sofachrome'; */
@@ -34,15 +39,41 @@
   height:40em;
   width:100%;
 }
+.expandButtonTextClass{
+  position:relative;
+  border-radius: 0.2em;
+  bottom:-50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  color: blue;
+  background:grey;
+  font-size: large;
+  /* transition:5s ease-in-out; */
+  width:6em;
+
+}
+
+.expandingTextBox{
+  max-height:60em;
+  background-color: rgba(33,37,41,1);
+  /* opacity: 1; */
+  border-radius: 1em;
+  cursor:pointer;
+  /* transition:5s ease-in-out; */
+
+  /* color:black; */
+}
 .Content{
   margin: 2%;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.4em;
 }
 .ContentContainer{
-  height:20em;
-  background-color:rgb(238, 238, 238);
-  color:black;
+  position: relative;
+  height:20vh;
+  background-color:rgba(33,37,41,1);
+  color:white;
   margin-top:-9em;
 }
 .Title{
@@ -149,3 +180,4 @@ footer{
   align-items: center;
   justify-content: center;
 }
+
