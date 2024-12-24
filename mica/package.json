@@ -1,6 +1,7 @@
 {
   "name": "mica",
   "version": "0.1.0",
+  "homepage": "https://bdempsey03.github.io/mica",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
