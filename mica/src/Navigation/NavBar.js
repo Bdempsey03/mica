@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import LogoNavButton from './LogoNavButton.js';
 
 const Navbar = ({ setCarouselIndex }) => {
@@ -13,22 +13,10 @@ const Navbar = ({ setCarouselIndex }) => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="/">
+      <Link className="navbar-brand" to="/">
         <LogoNavButton/>
-      </a>
-      {/* <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button> */}
-
-      <div>
+      </Link>
+        <div>
         <ul className="navbar-nav">
           {isHomePage && (
             <>
@@ -59,14 +47,14 @@ const Navbar = ({ setCarouselIndex }) => {
           </>
           )}
           <li className="nav-item">
-            <a className="nav-link" href="/contact">
+            <Link className="nav-link" to="/contact">
               Contact Us
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/about">
+            <Link className="nav-link" to="/about">
               About Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
