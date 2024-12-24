@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../Navigation/NavBar';
 function ContactUs() {
     return (
       <div className="page">
-      <Navbar/>
         <p className='text'>
-        Contact:<br/>
+        <h1>Contact Us at Mica Electronics</h1>
+
+        <br/>
         Kiba Dempsey<br/>
 Mica Electronics<br/>
 PO Box 1024<br/>

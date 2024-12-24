@@ -8,14 +8,12 @@ import logo from '../logo-black.png'
 
 const missionStyle = "Content";
 const title = "Title";
-function HomePage() {
+const HomePage = ({ carouselIndex, setCarouselIndex }) => {
     return (
         <div>
             <div className="App">
-                <NavBar />
-                {/* <img className='logo' src={logo} /> */}
                 <div className="Carousel">
-                    <MicaCarousel />
+                <MicaCarousel carouselIndex={carouselIndex} setCarouselIndex={setCarouselIndex} />
                 </div>
                 <div className='ContentContainer'>
                     <Content titleStyle={title} missionStyle={missionStyle} />

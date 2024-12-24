@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../App.css';
 class ExpandText extends React.Component {
     constructor(props) {
         super(props);
@@ -25,13 +26,8 @@ class ExpandText extends React.Component {
         return (
                   <div className={this.props.className}>
                     <div
-                      className="text-content"
                       ref={this.textRef}
-                      style={{
-                        maxHeight: this.props.showFull ? `${contentHeight}px` : "50em", // Adjust collapsed height as needed
-                        overflow: "hidden",
-                        transition: "max-height 0.9s ease",
-                      }}
+
                     >
                       <p>{visibleText}</p>
                     </div>

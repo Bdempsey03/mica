@@ -1,15 +1,17 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import LogoNavButton from './LogoNavButton.js';
 
-const Navbar = () => {
+const Navbar = ({ setCarouselIndex }) => {
+  const location = useLocation();
+
+  const handleNavClick = (slideIndex) => {
+    setCarouselIndex(slideIndex);
+  };
+
+  const isHomePage = location.pathname === "/";//if not home page then do not show carousel options
+
   return (
-    /*
-    Want to make clicking a nav bar entry just advance the carousel forward to that slide
-
-    Need to make navbar update carousel somehow?
-
-
-    */
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="/">
         <LogoNavButton/>
@@ -28,21 +30,34 @@ const Navbar = () => {
 
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
+          {isHomePage && (
+            <>
           <li className="nav-item active">
-            <a className="nav-link" href="/installations">
-              Installations
+          <a className="nav-link" onClick={() => handleNavClick(0)}>
+          Installations
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/IT-support">
-              IT Support
+          <a className="nav-link"  onClick={() => handleNavClick(1)}>
+          IT Support
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/remote-access">
-              Remote Access
+          <a className="nav-link" onClick={() => handleNavClick(2)}>
+          Remote Access
             </a>
           </li>
+          </>
+          )}
+          {!isHomePage && (
+            <>
+          <li className="nav-item">
+          <a className="nav-link" href="/">
+          Home
+            </a>
+          </li>
+          </>
+          )}
           <li className="nav-item">
             <a className="nav-link" href="/contact">
               Contact Us
