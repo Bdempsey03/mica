@@ -6,12 +6,7 @@
   text-align: center;
   background-color: rgba(33,37,41,1);
 }
-@font-face {
-  /* font-family: 'Sofachrome'; */
-  /* src: url('./fonts/sofachrome.ttf') format('truetype'); */
-  /* Add additional font formats if necessary */
-  /* Specify the correct path to the font files */
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -190,7 +185,7 @@ footer{
 .carousel-image{
   height: 30em;
   width:100%;
-  object-fit:fill;
+  object-fit:cover;
 }
 .carouselCaption{
   background-color: rgba(33,37,41,0.5);

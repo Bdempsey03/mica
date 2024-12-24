@@ -16,7 +16,7 @@ const Navbar = ({ setCarouselIndex }) => {
       <a className="navbar-brand" href="/">
         <LogoNavButton/>
       </a>
-      <button
+      {/* <button
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -26,9 +26,9 @@ const Navbar = ({ setCarouselIndex }) => {
         aria-label="Toggle navigation"
       >
         <span className="navbar-toggler-icon"></span>
-      </button>
+      </button> */}
 
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
+      <div>
         <ul className="navbar-nav">
           {isHomePage && (
             <>

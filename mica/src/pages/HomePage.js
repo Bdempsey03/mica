@@ -18,11 +18,11 @@ const HomePage = ({ carouselIndex, setCarouselIndex }) => {
                 <div className='ContentContainer'>
                     <Content titleStyle={title} missionStyle={missionStyle} />
                 </div>
-                <footer>
+                {/* <footer>
                     Phone: 250-566-1990 |
                     <a href={'mailto:lazydogacres@gmail.com'} > email </a> |
                     <a href={'https://www.facebook.com/MicaElectronics/'} > facebook </a>
-                </footer>
+                </footer> */}
             </div>
         </div>
     );
