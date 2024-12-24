@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7fa824e.css",
-    "main.js": "/static/js/main.311b1ee1.js",
-    "static/js/453.acaa6047.chunk.js": "/static/js/453.acaa6047.chunk.js",
-    "static/media/network2.jpg": "/static/media/network2.cd8a54afdc9a0d8209a2.jpg",
-    "static/media/MicaMountain.JPG": "/static/media/MicaMountain.20a83bb74e0268f26e2b.JPG",
-    "static/media/support.jpg": "/static/media/support.59d6ab93ccea38c599b2.jpg",
-    "static/media/remote2.jpg": "/static/media/remote2.05ddfc187e7e051f6dc1.jpg",
-    "static/media/MicaLogo.png": "/static/media/MicaLogo.5a00e26a8d30de5619ee.png",
-    "static/media/logo-black.png": "/static/media/logo-black.78722f32db0c510b701d.png",
-    "index.html": "/index.html",
-    "main.d7fa824e.css.map": "/static/css/main.d7fa824e.css.map",
-    "main.311b1ee1.js.map": "/static/js/main.311b1ee1.js.map",
-    "453.acaa6047.chunk.js.map": "/static/js/453.acaa6047.chunk.js.map"
+    "main.css": "/mica/static/css/main.d7fa824e.css",
+    "main.js": "/mica/static/js/main.9a6989c0.js",
+    "static/js/453.acaa6047.chunk.js": "/mica/static/js/453.acaa6047.chunk.js",
+    "static/media/network2.jpg": "/mica/static/media/network2.cd8a54afdc9a0d8209a2.jpg",
+    "static/media/MicaMountain.JPG": "/mica/static/media/MicaMountain.20a83bb74e0268f26e2b.JPG",
+    "static/media/support.jpg": "/mica/static/media/support.59d6ab93ccea38c599b2.jpg",
+    "static/media/remote2.jpg": "/mica/static/media/remote2.05ddfc187e7e051f6dc1.jpg",
+    "static/media/MicaLogo.png": "/mica/static/media/MicaLogo.5a00e26a8d30de5619ee.png",
+    "static/media/logo-black.png": "/mica/static/media/logo-black.78722f32db0c510b701d.png",
+    "index.html": "/mica/index.html",
+    "main.d7fa824e.css.map": "/mica/static/css/main.d7fa824e.css.map",
+    "main.9a6989c0.js.map": "/mica/static/js/main.9a6989c0.js.map",
+    "453.acaa6047.chunk.js.map": "/mica/static/js/453.acaa6047.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7fa824e.css",
-    "static/js/main.311b1ee1.js"
+    "static/js/main.9a6989c0.js"
   ]
 }
