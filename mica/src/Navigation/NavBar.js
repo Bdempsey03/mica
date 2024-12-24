@@ -21,17 +21,17 @@ const Navbar = ({ setCarouselIndex }) => {
           {isHomePage && (
             <>
           <li className="nav-item active">
-          <a className="nav-link" onClick={() => handleNavClick(0)}>
+          <a className="nav-link" href="#" onClick={() => handleNavClick(0)}>
           Installations
             </a>
           </li>
           <li className="nav-item">
-          <a className="nav-link"  onClick={() => handleNavClick(1)}>
+          <a className="nav-link" href="#" onClick={() => handleNavClick(1)}>
           IT Support
             </a>
           </li>
           <li className="nav-item">
-          <a className="nav-link" onClick={() => handleNavClick(2)}>
+          <a className="nav-link" href="#" onClick={() => handleNavClick(2)}>
           Remote Access
             </a>
           </li>
@@ -40,9 +40,9 @@ const Navbar = ({ setCarouselIndex }) => {
           {!isHomePage && (
             <>
           <li className="nav-item">
-          <a className="nav-link" href="/">
+          <Link className="nav-link" to="/">
           Home
-            </a>
+            </Link>
           </li>
           </>
           )}
