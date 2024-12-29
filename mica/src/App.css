@@ -1,10 +1,20 @@
-
-:root {
-  --main-bg-color:(rgba(33,37,41,1));
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
+/* Ensure the main container covers the entire viewport height */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
-  background-color: rgba(33,37,41,1);
+  background-color: rgba(33, 37, 41, 1);
 }
 
 
@@ -19,19 +29,20 @@
   }
 }
 
-.logo{
-  position:absolute;
-  top:6em;
-  right:1em;
-  height:8em;
-  z-index:1000;
+.logo {
+  position: absolute;
+  top: 6em;
+  right: 1em;
+  height: 8em;
+  z-index: 1000;
 }
 
-.Carousel{
-  position:relative;
-  height:40em;
-  width:100%;
+.Carousel {
+  position: relative;
+  height: 39.5em;
+  width: 100%;
 }
+
 .expandButtonTextClass {
   position: relative;
   border-radius: 0.2em;
@@ -45,116 +56,133 @@
   width: 8em;
 }
 
-.expandingTextBox{
+.expandingTextBox {
   max-height: 60em;
   background-color: rgba(33, 37, 41, 1);
   border-radius: 1em;
   cursor: pointer;
   font-size: 1em;
   padding: 1em;
-  overflow-wrap: break-word; /* Ensure long words break to fit within the container */
+  overflow-wrap: break-word;
+  /* Ensure long words break to fit within the container */
 }
-.Content{
+
+.Content {
   margin: 2%;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.4em;
 }
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .expandingTextBox {
-    font-size: 0.9em; /* Adjust font size for smaller screens */
+    font-size: 0.9em;
+    /* Adjust font size for smaller screens */
     padding: 0.5em;
   }
 
   .expandButtonTextClass {
-    font-size: 0.9em; /* Adjust button font size for smaller screens */
+    font-size: 0.9em;
+    /* Adjust button font size for smaller screens */
     width: 5em;
   }
-  .Content{
+
+  .Content {
     font-size: 1.2em;
   }
+
 }
 
 @media (max-width: 480px) {
   .expandingTextBox {
-    font-size: 0.8em; /* Further adjust font size for very small screens */
+    font-size: 0.8em;
+    /* Further adjust font size for very small screens */
     padding: 0.5em;
   }
 
   .expandButtonTextClass {
-    font-size: 0.8em; /* Further adjust button font size for very small screens */
+    font-size: 0.8em;
+    /* Further adjust button font size for very small screens */
     width: 5em;
   }
-  .Content{
+
+  .Content {
     font-size: 1em;
   }
+
 }
-.ContentContainer{
+
+.aboutTextBox {
+  background-color: #6c81d5;
+}
+
+.ContentContainer {
   position: relative;
-  height:20vh;
-  background-color:rgba(33,37,41,1);
-  color:white;
-  margin-top:-9em;
+  height: 20vh;
+  background-color: rgba(33, 37, 41, 1);
+  color: white;
+  margin-top: -8em;
 }
-.Title{
+
+.Title {
   position: relative;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 2.3em;
   font-weight: bold;
-  margin-bottom:-0.5em;
+  margin-bottom: -0.5em;
 }
-.Contact{
-  display:grid;
+
+.Contact {
+  display: grid;
   grid-template-rows: 1;
   grid-template-columns: 3;
   background-color: black;
 }
-.ContactText{
+
+.ContactText {
   color: white;
 }
-footer{
-  /* position: relative;
-  width:100%;
-  bottom:-25%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: black;
-  color:white;
-   */
-   position: absolute; 
-   bottom: 0; 
-   width: 100%;
-   background-color: black;
-   color:white;
+  color: white;
 }
-.pageContent{
-  display:flex;
+
+.pageContent {
+  display: flex;
   flex-direction: column;
-  align-items:left;
+  align-items: left;
 }
-.page{
-  height: 89vh;
-  background-color: #c1c1c1;
+
+.page {
+  height: 89.2vh;
+  background-color: #6c81d5;
 }
-.page .text{
+
+.page .text {
   color: black;
-  font-size:1.4em;
+  font-size: 1.4em;
   text-align: center;
   /* background-color: #001c53; */
   /* border:solid rgb(0, 0, 0); */
 }
-.page .text h1{
+
+.page .text h1 {
   font-size: 2.5em;
   font-weight: bold;
   color: black;
   text-align: center;
 }
-.twoColumns{
+
+.twoColumns {
   display: grid;
   grid-template-columns: 2;
   grid-template-rows: 1;
 }
+
 .App-header {
   background-color: #001c53;
   min-height: 100vh;
@@ -174,47 +202,55 @@ footer{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.carousel.slide .carousel-indicators button{
-  width:2em;
+
+.carousel.slide .carousel-indicators button {
+  width: 2em;
   height: .2em;
 }
-.carousel-image{
+
+.carousel-image {
   height: 30em;
-  width:100%;
-  object-fit:cover;
+  width: 100%;
+  object-fit: cover;
 }
-.carouselCaption{
-  background-color: rgba(33,37,41,0.5);
+
+.carouselCaption {
+  background-color: rgba(33, 37, 41, 0.5);
   border-radius: 1em;
 }
-.slider{
-  color:white;
+
+.slider {
+  color: white;
   position: absolute;
-  top:95%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 
 }
-.logoNavButton{
+
+.logoNavButton {
   align-items: center;
-  margin-left:0.3em;
+  margin-left: 0.3em;
 }
-.logoNavButtonText{
+
+.logoNavButtonText {
   position: relative;
-  top:-0.5em;
-  display:flex;
+  top: -0.5em;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.aboutImage{
-  height: 18em;
+
+.aboutImage {
+  max-height: 18em;
   width: 100em;
   object-fit: cover;
+  color: #6c81d5;
   /* border-radius: 50%; */
 }
-

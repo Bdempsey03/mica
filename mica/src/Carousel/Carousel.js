@@ -1,19 +1,35 @@
 import React, { useState, useEffect } from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import ExpandText from "./expandtext";
+import ExpandText from "./ExpandText";
 import '../App.css';
 
 const maxTextLength = 100;
 const data = [
   {
-    image: require('../Assets/network2.jpg'),
-    caption: "Installations",
+    image: require('../Assets/Blue1.PNG'),
+    caption: "Installations of Servers and Networks",
     description:
       <ExpandText
         maxLength={maxTextLength}
         className='expandingTextBox'
         classNameExpand='expandButtonTextClass'
         text=
+        {'We provide commercial grade IT solutions for small to mid-sized businesses, ' +
+          'including Active Directory configuration, physical server sales and support, hardwired ' + 
+          'and wireless networks, workstation sales and support, managed security, and robust backup '+
+          'solutions. We can offer a blend of Microsoft client machines and Linux Active Directory servers, '+
+          'thereby utilizing enterprise Active Directory features, with globally recognized security, with the '+
+          'additional benefits of Linux’s license free, secure, open source approach, making for a very cost-effective solution.'}
+           />
+  },
+  {
+    image: require('../Assets/Blue2.PNG'),
+    caption: "IT Support",
+    description: <ExpandText
+      maxLength={maxTextLength}
+      className='expandingTextBox'
+      classNameExpand='expandButtonTextClass'
+      text=
         {'Mica Electronics can fully support existing servers (Linux or Windows) and networks and we’re always happy to '+
           'assess your current IT setup and advise where performance, security and reliability improvements can be made. '+
           'If you’re having technical problems right now, please don’t hesitate to contact us for help. However, by far the '+
@@ -22,26 +38,10 @@ const data = [
           'Waiting until you’re already experiencing issues increases the probability of catastrophic data loss and the '+
           'disruption of business operations that generally accompanies unexpected hardware failures.'
         }
-           />
-  },
-  {
-    image: require('../Assets/support.jpg'),
-    caption: "IT Support",
-    description: <ExpandText
-      maxLength={maxTextLength}
-      className='expandingTextBox'
-      classNameExpand='expandButtonTextClass'
-      text=
-      {'We provide commercial grade IT solutions for small to mid-sized businesses, ' +
-        'including Active Directory configuration, physical server sales and support, hardwired ' + 
-        'and wireless networks, workstation sales and support, managed security, and robust backup '+
-        'solutions. We can offer a blend of Microsoft client machines and Linux Active Directory servers, '+
-        'thereby utilizing enterprise Active Directory features, with globally recognized security, with the '+
-        'additional benefits of Linux’s license free, secure, open source approach, making for a very cost-effective solution.'}
     />
   },
   {
-    image: require('../Assets/remote2.jpg'),
+    image: require('../Assets/Blue3.PNG'),
     caption: "Remote Access",
     description: <ExpandText
       maxLength={maxTextLength}

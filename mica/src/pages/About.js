@@ -5,6 +5,7 @@ import "../App.css";
 function About() {
   return (
     <div className="page">
+      <div className='aboutTextBox'>
       <p className='text'>
         <h1>About Mica Electronics</h1>
         <img src={mountain} alt="Mica Mountain" className="aboutImage" />
@@ -15,6 +16,7 @@ function About() {
         With 30 years of post graduate experience in servers, networking, and electronics hardware design, Kiba
         Dempsey, owner of Mica Electronics, is also the Technical Analyst for the Robson Valley’s four schools.
       </p>
+      </div>
     </div>
   );
 }
