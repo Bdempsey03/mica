@@ -5,6 +5,7 @@ import NavBar from "../Navigation/NavBar.js";
 import MicaCarousel from "../Carousel/Carousel.js";
 import Content from '../Content/Content.js';
 import logo from '../logo-black.png'
+import PropTypes from 'prop-types';
 
 const missionStyle = "Content";
 const title = "Title";
@@ -27,4 +28,9 @@ const HomePage = ({ carouselIndex, setCarouselIndex }) => {
         </div>
     );
 }
+HomePage.propTypes = {
+    carouselIndex: PropTypes.number.isRequired,
+    setCarouselIndex: PropTypes.func.isRequired,
+};
+
 export default HomePage;

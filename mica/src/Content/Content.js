@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Content(props){
 
@@ -14,4 +15,8 @@ function Content(props){
         </div>
     )
 }
+Content.propTypes = {
+    titleStyle: PropTypes.string,
+    missionStyle: PropTypes.string
+};
 export default Content;

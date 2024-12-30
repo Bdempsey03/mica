@@ -25,7 +25,7 @@ can watch everything that is being done, if they wish.
         2. We do y <br/>
         3....
       </p>
-      <image style = {{gridColumnStart:2}} url = {'../Assets/support.jpg'}/>
+      <image style = {{gridColumnStart:2}} src = {'../Assets/support.jpg'}/>
       </div>
       </div>
     );

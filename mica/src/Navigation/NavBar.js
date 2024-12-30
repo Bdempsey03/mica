@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 import LogoNavButton from './LogoNavButton.js';
 
 const Navbar = ({ setCarouselIndex }) => {
@@ -60,6 +61,9 @@ const Navbar = ({ setCarouselIndex }) => {
       </div>
     </nav>
   );
+};
+Navbar.propTypes = {
+  setCarouselIndex: PropTypes.func.isRequired,
 };
 
 export default Navbar;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Contact(props){
 
@@ -17,4 +18,9 @@ function Contact(props){
         </div>
     )
 }
+Contact.propTypes = {
+    contactContainer: PropTypes.string.isRequired,
+    contactStyle: PropTypes.string.isRequired,
+};
+
 export default Contact;

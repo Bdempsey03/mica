@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from 'prop-types';
 import Carousel from 'react-bootstrap/Carousel';
 import ExpandText from "./ExpandText";
 import '../App.css';
@@ -91,5 +92,9 @@ function MicaCarousel({ carouselIndex, setCarouselIndex }) {
     </Carousel>
   );
 }
+MicaCarousel.propTypes = {
+  carouselIndex: PropTypes.number.isRequired,
+  setCarouselIndex: PropTypes.func.isRequired,
+};
 
 export default MicaCarousel;
