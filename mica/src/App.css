@@ -1,6 +1,11 @@
 
 :root {
   --main-bg-color:(rgba(33,37,41,1));
+  height: 100%;
+  width: 100%;
+}
+html, body {
+  
 }
 .App {
   text-align: center;
@@ -29,7 +34,7 @@
 
 .Carousel{
   position:relative;
-  height:40em;
+  height: 87vh;
   width:100%;
 }
 .expandButtonTextClass {
