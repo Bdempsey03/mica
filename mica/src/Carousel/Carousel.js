@@ -7,7 +7,7 @@ import '../App.css';
 const maxTextLength = 100;
 const data = [
   {
-    image: require('../Assets/Blue1.PNG'),
+    image: require('../Assets/shutterstock_370276034.jpg'),
     caption: "Installations of Servers and Networks",
     description:
       <ExpandText
@@ -24,7 +24,7 @@ const data = [
            />
   },
   {
-    image: require('../Assets/Blue2.PNG'),
+    image: require('../Assets/shutterstock_2448388413.jpg'),
     caption: "IT Support",
     description: <ExpandText
       maxLength={maxTextLength}
@@ -42,7 +42,7 @@ const data = [
     />
   },
   {
-    image: require('../Assets/Blue3.PNG'),
+    image: require('../Assets/shutterstock_2506770511.jpg'),
     caption: "Remote Access",
     description: <ExpandText
       maxLength={maxTextLength}
