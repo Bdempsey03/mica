@@ -7,7 +7,7 @@ import '../App.css';
 const maxTextLength = 100;
 const data = [
   {
-    image: require('../Assets/shutterstock_370276034.jpg'),
+    image: require('../Assets/shutterstock_370276034SMALL.jpg'),
     caption: "Installations of Servers and Networks",
     description:
       <ExpandText
@@ -24,7 +24,7 @@ const data = [
            />
   },
   {
-    image: require('../Assets/shutterstock_2448388413.jpg'),
+    image: require('../Assets/shutterstock_2448388413SMALL.jpg'),
     caption: "IT Support",
     description: <ExpandText
       maxLength={maxTextLength}
@@ -42,7 +42,7 @@ const data = [
     />
   },
   {
-    image: require('../Assets/shutterstock_2506770511.jpg'),
+    image: require('../Assets/shutterstock_2506770511SMALL.jpg'),
     caption: "Remote Access",
     description: <ExpandText
       maxLength={maxTextLength}
@@ -57,7 +57,8 @@ const data = [
         'showing signs of failing would still need a site visit to repair or replace. '+
         'While we’re servicing the PC remotely, a clearly visible notification will be shown on the screen and the client '+
         'can watch everything that is being done, if they wish.'}    />
-  }
+  },
+
 ];
 
 function MicaCarousel({ carouselIndex, setCarouselIndex }) {

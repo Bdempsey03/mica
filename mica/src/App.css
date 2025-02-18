@@ -16,7 +16,9 @@ html {
   text-align: center;
   background-color: rgba(33, 37, 41, 1);
 }
-
+.infoText{
+  font-size: medium;
+}
 
 .App-logo {
   height: 40vmin;
@@ -41,6 +43,11 @@ html {
   position: relative;
   height: 87.4vh;
   width: 100%;
+}
+.carousel-image {
+  height: 30em;
+  width: 100%;
+  object-fit: cover;
 }
 
 .expandButtonTextClass {
@@ -70,11 +77,16 @@ html {
 .Content {
   margin: 2%;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+/* @media (max-width:1600px){
+  .carousel-image {
+    height: 30em;
+  }
+} */
+@media (max-width: 1300px) {
   .expandingTextBox {
     font-size: 0.9em;
     /* Adjust font size for smaller screens */
@@ -89,6 +101,51 @@ html {
 
   .Content {
     font-size: 1.2em;
+  }
+  .Carousel{
+    height: 89.4vh;
+  }
+  .carousel-image {
+    height: 25em;
+  }
+
+}
+@media (max-width: 1150px) {
+  .expandingTextBox {
+    font-size: 0.9em;/* Adjust font size for smaller screens */
+    padding: 0.5em;
+  }
+
+  .expandButtonTextClass {
+    font-size: 0.9em;
+    /* Adjust button font size for smaller screens */
+    width: 5em;
+  }
+
+  .Content {
+    font-size: 1.1em;
+  }
+  .carousel-image {
+    height: 23em;
+  }
+  
+
+}
+@media (max-width: 768px) {
+  .expandingTextBox {
+    font-size: 0.9em;
+    /* Adjust font size for smaller screens */
+    padding: 0.5em;
+  }
+
+  .expandButtonTextClass {
+    font-size: 0.9em;
+    /* Adjust button font size for smaller screens */
+    width: 5em;
+  }
+
+  .Content {
+    font-size: 1.0em;
   }
 
 }
@@ -157,6 +214,11 @@ footer {
   align-items: left;
 }
 
+.bg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .page {
   height: 89.2vh;
   background-color: #6c81d5;
@@ -164,7 +226,7 @@ footer {
 
 .page .text {
   color: black;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
   /* background-color: #001c53; */
   /* border:solid rgb(0, 0, 0); */
@@ -176,6 +238,20 @@ footer {
   color: black;
   text-align: center;
 }
+@media (max-width: 1400px) {
+  .page .text h1{
+    font-size: 2em;
+  }
+  .page .text{
+    font-size: 1.2em;
+  }
+  
+}
+/* @media (max-width: 1100px) {
+  .page .text{
+    font-size: 0.8em;
+  }
+} */
 
 .twoColumns {
   display: grid;
@@ -211,12 +287,6 @@ footer {
 .carousel.slide .carousel-indicators button {
   width: 2em;
   height: .2em;
-}
-
-.carousel-image {
-  height: 30em;
-  width: 100%;
-  object-fit: cover;
 }
 
 .carouselCaption {

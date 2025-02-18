@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from '../Navigation/NavBar';
 import mountain from "../Assets/MicaMountain.JPG"
 import "../App.css";
+
+/* DEPRECATED */
 function About() {
   return (
     <div className="page">
